@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Shopping Cart</title>
+
+</head>
+
+<body>
+    <!-- Your code goes here -->
+    <div class="container">
+        <div>
+        <div class="product-image">
+        <!-- <img id="main-image" src= "https://static.zara.net/assets/public/269e/b663/e8dc4a1a9467/9609d6aa2a86/05107301712-p/05107301712-p.jpg?ts=1709724475973&w=560" alt="Product Image"> -->
+        </div>
+        <div class="thumbnail-images">
+        <img onclick="changeImage('image1.jpg')" src="https://static.zara.net/assets/public/269e/b663/e8dc4a1a9467/9609d6aa2a86/05107301712-p/05107301712-p.jpg?ts=1709724475973&w=560" alt="Thumbnail 1">
+        <img onclick="changeImage('image2.jpg')" src="https://static.zara.net/assets/public/269e/b663/e8dc4a1a9467/9609d6aa2a86/05107301712-p/05107301712-p.jpg?ts=1709724475973&w=560" alt="Thumbnail 2">
+        <img onclick="changeImage('image3.jpg')" src="https://static.zara.net/assets/public/269e/b663/e8dc4a1a9467/9609d6aa2a86/05107301712-p/05107301712-p.jpg?ts=1709724475973&w=560" alt="Thumbnail 3">
+        <img onclick="changeImage('image4.jpg')" src="https://static.zara.net/assets/public/269e/b663/e8dc4a1a9467/9609d6aa2a86/05107301712-p/05107301712-p.jpg?ts=1709724475973&w=560" alt="Thumbnail 4">
+        </div>
+        </div>
+        <div class="product-details">
+        <h1>Marmeto</h1>
+        <h2>Embrace Sideboard</h2>
+        <p class="price">$12999.00 <span class="discount" id="discount-percentage">35% Off</span></p>
+        <p class="original-price">$19999.00</p>
+        <div class="color-options">
+        <label>Choose a Color</label>
+        <div class="colors">
+        <div class="color" style="background-color: #F4E5C1;"></div>
+        <div class="color" style="background-color: #D1F0C4; width: 100px; height: 100px;"></div>
+        <!-- <div class="color" style="background-color: #D1F0C4;"></div> -->
+        <div class="color" style="background-color: #D3C3F0;"></div>
+        <div class="color" style="background-color: #F0C3E5;"></div>
+        </div>
+        </div>
+        <div class="size-options">
+        <label>Choose a Size</label>
+        <div class="sizes">
+        <input type="radio" name="size" id="small" checked>
+        <label for="small">Small</label>
+        <input type="radio" name="size" id="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" name="size" id="large">
+        <label for="large">Large</label>
+        <input type="radio" name="size" id="xlarge">
+        <label for="xlarge">Extra Large</label>
+        <input type="radio" name="size" id="xxl">
+        <label for="xxl">XXL</label>
+        </div>
+        </div>
+        <div class="quantity">
+        <button onclick="decrement()">-</button>
+        <input type="text" id="quantity" value="1">
+        <button onclick="increment()">+</button>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">Add To Cart</button>
+        <p id="cart-message" class="cart-message"></p>
+        <p class="description">
+                       The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.
+        </p>
+        </div>
+        </div>
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
